@@ -1,12 +1,10 @@
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
- }
  .description{
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
  body{
      background-color:#BFDBF7;
      color: #022B3A;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
  .trybe {
      color: #53917E;
@@ -37,3 +35,49 @@ h1 {
  ol{
      color: #022B3A;
  }
+
+ #foto {
+     float: left;
+     clear: both;
+     border-radius: 100%;
+     background-color: #022B3A;
+     padding: 3px;
+ }
+
+div.um {
+    /* border: 2px solid red; */
+    margin-bottom: 280px;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+div.um div {
+    /* border: 2px solid green; */
+    width: 600px;
+    margin-left: 430px;
+    margin-top: 40px;
+    padding-top: 100px;
+}
+
+div.dois {
+    /* border: 2px solid red; */
+    display: inline-block;
+    padding-right: 100px;
+    margin-left: 30%;
+}
+
+div.habs {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+div.links {
+    display: inline-block;
+    margin-left: 250px;
+    vertical-align: top;
+}
+
+div.links a {
+    display: block;
+    margin-bottom: 20px;
+}
