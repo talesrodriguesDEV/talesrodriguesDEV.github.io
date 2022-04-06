@@ -4,40 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tales Rodrigues | Portifólio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="um">
-        <img id="foto" src="selfie.jpeg" alt="Foto do Tales" width="400px">
-        <div>    
-            <h1>Tales Eugênio Mendes Rodrigues</h1> 
-            <p class="description"> Estudante de Desenvolvimento Web na <em><strong class="trybe">Trybe</strong></em>  <br> Brasileiro | Natural de Goiânia (GO)
-        </div>   
-    </div>
-    <div class="dois">
-        <div class="habs">
-            <h2 id="habilidades" >Habilidades</h2>
-            <p>
-                <ul>    
-                    <li><em><strong class="softskills" id="HabPrincipal">Autoconhecimento</strong></em></li>         
-                    <li class="softskills">Bom senso</li> 
-                    <li class="softskills">Empatia</li> 
-                    <li class="softskills">Comprometimento</li> 
-                    <li class="hardskills">Inglês avançado</li>
-                    <li class="hardskills">Redação</li> 
-                    <li class="hardskills">C</li> 
-                    <li class="hardskills">Java</li> 
-                    <li class="hardskills">Javascript</li> 
+    <section id="section1">
+        <header id="cabecalho">
+            <h1 id="titulo">Lições Aprendidas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#section2">Lições</a></li>
+                    <li><a href="#section3">Experiências</a></li>
+                    <li><a href="#section4">Formação na Trybe</a></li>
                 </ul>
-            </p>
-        </div>
-        <div class="links">
-            <h2 id="links">Links</h2>
-            <a href="https://www.linkedin.com/in/tales-rodrigues-aba838235/" target="_blank">Linkedin</a>
-            <a href="https://github.com/talesrodriguesDEV" target="_blank">Github</a>
-            <a href="https://www.betrybe.com/" target="_blank">BeTrybe!</a>   
-        </div>
-    </div> 
+            </nav>
+        </header>
+        <img src="minha_foto.jpeg" alt="Foto do Tales" id="minha_foto">
+    </section>
+
+    <section id="section2">
+        <ol id="licoes_aprendidas">
+            <h2>Lições Aprendidas</h2>
+            <li>Unix</li>
+            <li>Bash</li>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>Git/Github</li>
+            <li>Como funciona a internet</li>
+            <li>Como dar um feedback</li>
+            <li>Gestão de tempo</li>
+            <li>Como ser protagonista</li>
+            <li>Como ter uma comunicação assertiva</li>
+        </ol>
+        <ul id="licoes_a_aprender">
+            <h2>Lições a aprender</h2>
+            <li>JavaScript</li>
+            <li>Back-End</li>
+            <li>Python</li>
+            <li>Novos fundamentos de desenvolvimento Web</li>
+            <li>Front-End</li>
+            <li>Ciência da Computação</li>
+            <li>Melhorar a comunicação</li>
+            <li>Trabalhar bem em grupo</li>
+            <li>Como agir em uma entrevista de emprego</li>
+            <li>Me conhecer cada vez mais</li>
+        </ul>
+    </section>
+
+    <section id="section3">
+        <h2>Algumas Experiências até então...</h2>
+        <article class="lado-esquerdo">
+            Nas últimas duas semanas (quase três) em que iniciei minha jornada na Trybe, tenho aprendido muitas coisas. O ritmo do conteúdo é extremamente empolgante, tanto no que se refere à Hard Skills quanto no que se refere à Soft Skills. Estou bastante focado para “fazer dar certo” e todo dia aprimoro algo, seja com relação a minha rotina ou à maneira que consumo o conteúdo. VQV!
+        </article>
+        <aside class="lado-direito">
+            No primeiro dia de conteúdo, “eu fui com muita sede ao pote” e acabei não tendo o melhor aproveitamento possível. Desde então, tenho aprimorado cada vez mais minha rotina e acredito que estou no caminho certo.
+        </aside>
+    </section>
+       
+    <section id="section4">
+        <div>
+            <h2>Conheça os 4 módulos de conteúdo na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>!</h2>
+            <ul>
+                <li>1º Quadrante - Fundamentos de Desenvolvimento Web</li>
+                <li>2º Quadrante - Desenvolvimento Front-End</li>
+                <li>3º Quadrante - Desenvolvimento Back-End</li>
+                <li>4º Quadrante - Ciência da Computação</li>
+            </ul>
+        </div>    
+        <table>
+            <tr><td><img src="https://app.betrybe.com/static/media/fundamentals.d4ce6da9.svg" alt="" id="quadrante1"></td><td><img src="https://app.betrybe.com/static/media/front-end.3f3c4418.svg" alt="" id="quadrante2"></td></tr>
+            <tr><td><img src="https://app.betrybe.com/static/media/back-end.a979af1a.svg" alt="" id="quadrante3"></td><td><img src="https://app.betrybe.com/static/media/computer-science.7ae26ddf.svg" alt="" id="quadrante4"></td></tr>
+            <!-- Referência: https://www.homehost.com.br/blog/criar-sites/tabela-html/ -->
+        </table>
+    </section>    
+    <footer id="rodape">
+        <h2>Produzido por <a href="https://www.linkedin.com/in/tales-rodrigues-aba838235/" id="tales" target="_blank">Tales Rodrigues</a>.</h2>
+    </footer>
 </body>
 </html>
