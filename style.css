@@ -1,83 +1,138 @@
- .description{
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- }
- body{
-     background-color:#BFDBF7;
-     color: #022B3A;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- .trybe {
-     color: #53917E;
-     
- }
- p {
-     color: #53917E;
- }
- ul {
-     color: #53917E;
- }
- #HabPrincipal {
-     color: darkgoldenrod;
- }
- .softskills {
-     font-size: 20px;
- }
- .hardskills {
-     font-size: 16px;
- }
- hr {
-     background-color: #E1E5F2;
-     color: #E1E5F2;
- }
- a{
-     color: #53917E;
- }
- ol{
-     color: #022B3A;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #E5DADA;
+    text-shadow: 3px 3px 3px #02040F;
+}
 
- #foto {
-     float: left;
-     clear: both;
-     border-radius: 100%;
-     background-color: #022B3A;
-     padding: 3px;
- }
+.links {
+    text-decoration: none;
+}
 
-div.um {
+body {
+    background-image: url(/pexels-sabrina-gelbart-249798.jpg);
+}
+
+header {
     /* border: 2px solid red; */
-    margin-bottom: 280px;
-    margin-top: 50px;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: min-content;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: #002642;
+    min-width: min-content;
+    border-radius: 10px;
+    max-width: 650px;
+    height: 150px;
 }
 
-div.um div {
-    /* border: 2px solid green; */
-    width: 600px;
-    margin-left: 430px;
-    margin-top: 40px;
-    padding-top: 100px;
-}
-
-div.dois {
+nav {
     /* border: 2px solid red; */
-    display: inline-block;
-    padding-right: 100px;
-    margin-left: 30%;
+    display: flex;
+    width: 140px;
+    height: 60px;
+    justify-content: space-evenly;
+    padding: 12px;
 }
 
-div.habs {
-    display: inline-block;
-    margin-left: 150px;
+#sobre-mim {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-around;
 }
 
-div.links {
-    display: inline-block;
-    margin-left: 250px;
-    vertical-align: top;
+p {
+    /* border: 2px solid red; */
+    max-width: 60%;
+    font-weight: bolder;
+    background-color: #002642;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-div.links a {
-    display: block;
-    margin-bottom: 20px;
+#p-projetos {
+    background-color: #02040F;
+}
+
+#minha-foto {
+    width: 300px;
+    border-radius: 100%;
+    border: 5px solid #02040F;
+}
+
+#meus-projetos {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #002642;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.projetos {
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 30px;
+    border: 5px solid #02040F;
+}
+
+.projetos:hover {
+    border: 5px solid #E5DADA;
+}
+
+#projetos {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container-nav-eu {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 380px;
+    background-color: #002642;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+i {
+    font-size: 30px;
+}
+
+i:hover {
+    color: #02040F;
+}
+
+#container-projetos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.container {
+    box-shadow: 2px 2px 10px #E5DADA;
+}
+
+footer {
+    background-color: #02040F;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
 }
