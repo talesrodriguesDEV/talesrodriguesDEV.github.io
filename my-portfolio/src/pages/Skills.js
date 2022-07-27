@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 class Skills extends Component {
-  render () {
+  renderText = () => {
     const { language } = this.props
     let humanSkills
     let workSkills
@@ -15,6 +15,7 @@ class Skills extends Component {
           <br />
           <ul>
             <li>Analytical Capability</li>
+            <li>Learning</li>
             <li>Willpower</li>
             <li>Emotional Intelligence</li>
             <li>Problem Solving</li>
@@ -48,6 +49,7 @@ class Skills extends Component {
           <br />
           <ul>
             <li>Capacidade Analítica</li>
+            <li>Aprender</li>
             <li>Força de Vontade</li>
             <li>Inteligência Emocional</li>
             <li>Resolução de problemas</li>
@@ -75,6 +77,11 @@ class Skills extends Component {
         </div>
       )
     }
+    return { humanSkills, workSkills }
+  }
+
+  render () {
+    const { humanSkills, workSkills } = this.renderText()
     return (
       <div className='bigger-container'>
         <TopBar atHome={false} />

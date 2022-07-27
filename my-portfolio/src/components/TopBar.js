@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import { changeLanguage, changeVisualMode } from '../redux/actions'
 
 class TopBar extends Component {
-  render () {
-    const { atHome, language, changeLanguage, visualMode, changeVisualMode } = this.props
+  renderText = () => {
+    const { language, visualMode } = this.props
     const displayLanguage = language === 'pt' ? 'Português' : 'English'
     let displayVisualMode
     switch (language) {
@@ -18,6 +18,12 @@ class TopBar extends Component {
         break
     }
     const buttonText = language === 'pt' ? 'Voltar à Home' : 'Back To Home'
+    return { displayLanguage, buttonText, displayVisualMode }
+  }
+
+  render () {
+    const { atHome, changeLanguage, changeVisualMode } = this.props
+    const { displayLanguage, buttonText, displayVisualMode } = this.renderText()
     return (
       <div className='top-bar'>
         <div className="form-check form-switch">

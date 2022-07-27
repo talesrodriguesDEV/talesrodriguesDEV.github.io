@@ -20,10 +20,10 @@ class App extends Component {
         <Contact />
           <HashRouter>
             <Switch>
-              <Route path={'/projects'} component={Projects} />
-              <Route path={'/aboutme'} component={AboutMe} />
-              <Route path={'/skills'} component={Skills} />
-              <Route path={'/'} component={Home} />
+              <Route path={'/projects'} exact component={Projects} />
+              <Route path={'/aboutme'} exact component={AboutMe} />
+              <Route path={'/skills'} exact component={Skills} />
+              <Route path={'/'} exact component={Home} />
               <Route path={'*'} component={NotFound} />
             </Switch>
           </HashRouter>

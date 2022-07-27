@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 class Contact extends Component {
-  render () {
+  renderText = () => {
     const { language } = this.props
     let p1
     let p2
@@ -18,6 +18,11 @@ class Contact extends Component {
       p2 = <p>I&#39;m Tales! Web Developer &#128578;</p>
       p3 = <p>How u doin&#39; ?</p>
     }
+    return { p1, p2, p3 }
+  }
+
+  render () {
+    const { p1, p2, p3 } = this.renderText()
     return (
       <div className='side-bar'>
         <div className='contact'>

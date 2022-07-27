@@ -37,10 +37,6 @@
 
 .home-button {
   text-decoration: none;
-  color: #F0F7EE;
-  background-color: #5D737E;
-  padding: 8px;
-  border-radius: 10px;
 }
 
 .side-bar {
@@ -142,7 +138,7 @@
 }
 
 .project-info {
-  width: 350px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

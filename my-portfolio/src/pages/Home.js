@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 class Home extends Component {
-  render () {
+  renderText = () => {
     const { language } = this.props
     let proj
     let about
@@ -19,6 +19,11 @@ class Home extends Component {
       about = 'About Me'
       skill = 'Skills'
     }
+    return { proj, about, skill }
+  }
+
+  render () {
+    const { proj, about, skill } = this.renderText()
     return (
       <div className='bigger-container'>
         <TopBar atHome={true} />
@@ -35,13 +40,11 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  language: state.language,
-  visualMode: state.visualMode
+  language: state.language
 })
 
 Home.propTypes = {
-  language: PropTypes.string.isRequired,
-  visualMode: PropTypes.string.isRequired
+  language: PropTypes.string.isRequired
 }
 
 export default connect(mapStateToProps)(Home)

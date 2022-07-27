@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { Map, Marker, ZoomControl } from 'pigeon-maps'
 
 class AboutMe extends Component {
-  render () {
+  renderText = () => {
     const { language } = this.props
     let title
     let text
@@ -25,6 +25,11 @@ class AboutMe extends Component {
       certificatesTitle = <h1>Certificados (por enquanto...)</h1>
       cert1 = <a href='https://www.credential.net/54016758-6cc9-4ffe-8bc6-54d1a967eeca#gs.7i1go1' target='_blank' rel="noreferrer">Fundamentos de Desenvolvimento Web</a>
     }
+    return { title, text, mapTitle, certificatesTitle, cert1 }
+  }
+
+  render () {
+    const { title, text, cert1, mapTitle, certificatesTitle } = this.renderText()
     return (
       <div className='bigger-container'>
         <TopBar atHome={false} />
@@ -37,14 +42,14 @@ class AboutMe extends Component {
             <div className='map-cert-container'>
               <div className='certificates-container'>
                 {certificatesTitle}
-                <br/>
+                <br />
                 <ul>
                   <li>{cert1}</li>
                 </ul>
               </div>
               <div className='map-container'>
                 {mapTitle}
-                <br/>
+                <br />
                 <div className='map'>
                   <Map
                     height={350}

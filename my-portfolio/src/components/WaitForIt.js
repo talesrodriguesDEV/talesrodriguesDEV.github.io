@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class WaitForIt extends Component {
   render () {
-    return (<div>oi</div>)
+    return (<div>Wait For It...</div>)
   }
 }
 
